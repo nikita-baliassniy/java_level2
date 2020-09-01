@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+
+
+<?import javafx.scene.control.TextField?>
+<VBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS" editable="false" text="Press ENTER or the 'Send' button to start" />
+    <GridPane>
+        <TextField fx:id="messageTextField" onKeyPressed="#keyPressedAction" minWidth="250" maxWidth="250" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button text="Send" onAction="#btnOneClickAction" minWidth="50" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    </GridPane>
+</VBox>
